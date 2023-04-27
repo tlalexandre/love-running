@@ -19,12 +19,12 @@
         <nav>
             <ul id="menu">
                 <li>
-                    <a href="signup.html">
+                    <a href="signup.html" class="active">
                         Sign Up
                     </a>
                 </li>
                 <li>
-                    <a href="gallery.html" class="active">
+                    <a href="gallery.html">
                         Gallery
                     </a>
                 </li>
@@ -34,16 +34,24 @@
             </ul>
         </nav>
     </header>
-    <section id="photos">
-        <img src="./assets/images/athletes.jpg" alt="">
-        <img src="./assets/images/girls.jpg" alt="">
-        <img src="./assets/images/runner3.jpg" alt="">
-        <img src="./assets/images/man.jpg" alt="">
-        <img src="./assets/images/runner1.jpg" alt="">
-        <img src="./assets/images/runner2.jpg" alt="">
-        <img src="./assets/images/runner4.jpg" alt="">
-        <img src="./assets/images/running_gang.jpg" alt="">
-        <img src="./assets/images/mud-run.jpg" alt="">
+    <section class="form-section">
+        <form action="https://formdump.codeinstitute.net/" method="post" class="signup-form">
+            <h2>Let's get you signed up! <i class="fas fa-heartbeat"></i></h2>
+            <label for="fname">First Name</label>
+            <input type="text" name="first_name" id="fname" class="text-input" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="last_name" id="lname" class="text-input" required>
+            <label for="email">Email Address</label>
+            <input type="email" name="email_address" id="email" class="text-input" required>
+
+            <label for="road">Road</label>
+            <input type="radio" name="running_preference" id="road" value="road" required>
+            <label for="trail">Trail</label>
+            <input type="radio" name="running_preference" id="trail" value="trail">
+            <label for="both">Both</label>
+            <input type="radio" name="running_preference" id="both" value="both">
+            <input type="submit" value="Let's Run!" class="join-button">
+        </form>
     </section>
     <footer>
         <ul class="social-networks">
